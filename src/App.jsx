@@ -134,16 +134,31 @@ const App = () => {
         </div>
 
         {/* HERO SECTION */}
-        <section className="h-screen flex flex-col items-center justify-center px-6 relative">
-          <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} className="bg-white/50 backdrop-blur-sm px-6 py-2 rounded-full text-xs font-bold mb-6 border border-white">
-             NOVEMBER 14, 2025 — FOREVER
-          </motion.div>
-          <h1 className="text-7xl md:text-9xl font-black text-center leading-[0.8] tracking-tighter">
-            HAPPY <br/> <span className="text-[#ff4d6d]">ANNIVERSARY</span>
-          </h1>
-          <p className="mt-8 text-xl md:text-2xl opacity-60 font-medium italic">You are my Jaanam, Alida.</p>
-          <div className="absolute bottom-10 animate-bounce opacity-20"><ChevronDown size={40} /></div>
-        </section>
+        {/* HERO SECTION - FIXED FOR MOBILE */}
+<section className="h-screen flex flex-col items-center justify-center px-4 relative">
+  <motion.div 
+    initial={{ opacity: 0 }} 
+    animate={{ opacity: 1 }} 
+    className="bg-white/50 backdrop-blur-sm px-6 py-2 rounded-full text-[10px] font-bold mb-6 border border-white tracking-widest"
+  >
+     NOVEMBER 14, 2025 — FOREVER
+  </motion.div>
+  
+  <h1 className="text-[14vw] md:text-9xl font-black text-center leading-[0.85] tracking-tighter break-words max-w-full">
+    HAPPY <br/> 
+    <span className="text-[#ff4d6d] block sm:inline">
+      ANNIVERSARY
+    </span>
+  </h1>
+  
+  <p className="mt-8 text-lg md:text-2xl opacity-60 font-medium italic text-center">
+    You are my Jaanam, Alida.
+  </p>
+  
+  <div className="absolute bottom-10 animate-bounce opacity-20">
+    <ChevronDown size={40} />
+  </div>
+</section>
 
         {/* TIMER SECTION */}
         <section className="py-20 px-6">
